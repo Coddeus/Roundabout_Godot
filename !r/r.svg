@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="dessin.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:export-filename="C:\Users\win10\Codiiign\OnGitHub\CD\_Private\Roundabout\!r\r9.png"
+   inkscape:export-xdpi="194.01308"
+   inkscape:export-ydpi="194.01308"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72070006"
+     inkscape:cx="396.83638"
+     inkscape:cy="521.02119"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient15926"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#5f9600;stop-opacity:1;"
+         offset="0"
+         id="stop15924" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient13509"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#5f9600;stop-opacity:1;"
+         offset="0"
+         id="stop13507" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000064;stroke-width:25"
+       id="path932"
+       sodipodi:type="arc"
+       sodipodi:cx="100"
+       sodipodi:cy="-100"
+       sodipodi:rx="100"
+       sodipodi:ry="100"
+       sodipodi:start="6.0213859"
+       sodipodi:end="0"
+       sodipodi:arc-type="slice"
+       d="M 196.59258,-125.88191 A 100,100 0 0 1 200,-100 H 100 Z"
+       transform="scale(1,-1)" />
+    <circle
+       style="fill:#00ff64;fill-opacity:1;stroke-width:106.299"
+       id="path1036"
+       cx="100"
+       cy="100"
+       r="90" />
+  </g>
+</svg>
