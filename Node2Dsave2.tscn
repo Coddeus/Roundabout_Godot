@@ -1,0 +1,1686 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://!r/r2.png" type="Texture" id=1]
+[ext_resource path="res://!r/r7.png" type="Texture" id=2]
+[ext_resource path="res://!r/r5.png" type="Texture" id=3]
+[ext_resource path="res://!r/r3.png" type="Texture" id=4]
+[ext_resource path="res://!r/r8.png" type="Texture" id=5]
+[ext_resource path="res://!r/r9.png" type="Texture" id=6]
+[ext_resource path="res://!r/r4.png" type="Texture" id=7]
+[ext_resource path="res://!r/r0.png" type="Texture" id=8]
+[ext_resource path="res://!r/r1.png" type="Texture" id=9]
+[ext_resource path="res://!r/r6.png" type="Texture" id=10]
+
+[node name="Viewport" type="Node2D"]
+
+[node name="Bricks" type="Node2D" parent="."]
+
+[node name="R0" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 108.7 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R1" type="Sprite" parent="Bricks"]
+position = Vector2( 510.999, 130.8 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R2" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 152 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R3" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 174 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R4" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 196 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R5" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 218 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R6" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 240 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R7" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 262.2 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R8" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 284.5 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R9" type="Sprite" parent="Bricks"]
+position = Vector2( 511, 306.7 )
+rotation = -1.5708
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R10" type="Sprite" parent="Bricks"]
+position = Vector2( 561.454, 114.253 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R11" type="Sprite" parent="Bricks"]
+position = Vector2( 555.734, 135.599 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R12" type="Sprite" parent="Bricks"]
+position = Vector2( 550.248, 156.077 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R13" type="Sprite" parent="Bricks"]
+position = Vector2( 544.554, 177.328 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R14" type="Sprite" parent="Bricks"]
+position = Vector2( 538.86, 198.578 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R15" type="Sprite" parent="Bricks"]
+position = Vector2( 533.166, 219.828 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R16" type="Sprite" parent="Bricks"]
+position = Vector2( 527.472, 241.079 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R17" type="Sprite" parent="Bricks"]
+position = Vector2( 521.726, 262.522 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R18" type="Sprite" parent="Bricks"]
+position = Vector2( 515.954, 284.062 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R19" type="Sprite" parent="Bricks"]
+position = Vector2( 510.208, 305.506 )
+rotation = -1.309
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R20" type="Sprite" parent="Bricks"]
+position = Vector2( 608.689, 132.637 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R21" type="Sprite" parent="Bricks"]
+position = Vector2( 597.638, 151.776 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R22" type="Sprite" parent="Bricks"]
+position = Vector2( 587.039, 170.136 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R23" type="Sprite" parent="Bricks"]
+position = Vector2( 576.039, 189.188 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R24" type="Sprite" parent="Bricks"]
+position = Vector2( 565.039, 208.241 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R25" type="Sprite" parent="Bricks"]
+position = Vector2( 554.039, 227.294 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R26" type="Sprite" parent="Bricks"]
+position = Vector2( 543.039, 246.346 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R27" type="Sprite" parent="Bricks"]
+position = Vector2( 531.939, 265.572 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R28" type="Sprite" parent="Bricks"]
+position = Vector2( 520.789, 284.884 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R29" type="Sprite" parent="Bricks"]
+position = Vector2( 509.689, 304.11 )
+rotation = -1.0472
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R30" type="Sprite" parent="Bricks"]
+position = Vector2( 649.607, 162.673 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R31" type="Sprite" parent="Bricks"]
+position = Vector2( 633.98, 178.299 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R32" type="Sprite" parent="Bricks"]
+position = Vector2( 618.99, 193.291 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R33" type="Sprite" parent="Bricks"]
+position = Vector2( 603.433, 208.847 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R34" type="Sprite" parent="Bricks"]
+position = Vector2( 587.877, 224.403 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R35" type="Sprite" parent="Bricks"]
+position = Vector2( 572.321, 239.96 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R36" type="Sprite" parent="Bricks"]
+position = Vector2( 556.764, 255.516 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R37" type="Sprite" parent="Bricks"]
+position = Vector2( 541.067, 271.214 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R38" type="Sprite" parent="Bricks"]
+position = Vector2( 525.298, 286.982 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R39" type="Sprite" parent="Bricks"]
+position = Vector2( 509.6, 302.68 )
+rotation = -0.785402
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R40" type="Sprite" parent="Bricks"]
+position = Vector2( 681.363, 202.289 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R41" type="Sprite" parent="Bricks"]
+position = Vector2( 662.223, 213.338 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R42" type="Sprite" parent="Bricks"]
+position = Vector2( 643.864, 223.939 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R43" type="Sprite" parent="Bricks"]
+position = Vector2( 624.812, 234.939 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R44" type="Sprite" parent="Bricks"]
+position = Vector2( 605.759, 245.939 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R45" type="Sprite" parent="Bricks"]
+position = Vector2( 586.706, 256.939 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R46" type="Sprite" parent="Bricks"]
+position = Vector2( 567.654, 267.939 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R47" type="Sprite" parent="Bricks"]
+position = Vector2( 548.428, 279.039 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R48" type="Sprite" parent="Bricks"]
+position = Vector2( 529.116, 290.189 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R49" type="Sprite" parent="Bricks"]
+position = Vector2( 509.89, 301.289 )
+rotation = -0.523602
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R50" type="Sprite" parent="Bricks"]
+position = Vector2( 701.781, 248.76 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R51" type="Sprite" parent="Bricks"]
+position = Vector2( 680.434, 254.479 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R52" type="Sprite" parent="Bricks"]
+position = Vector2( 659.957, 259.967 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R53" type="Sprite" parent="Bricks"]
+position = Vector2( 638.707, 265.661 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R54" type="Sprite" parent="Bricks"]
+position = Vector2( 617.456, 271.355 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R55" type="Sprite" parent="Bricks"]
+position = Vector2( 596.206, 277.049 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R56" type="Sprite" parent="Bricks"]
+position = Vector2( 574.955, 282.743 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R57" type="Sprite" parent="Bricks"]
+position = Vector2( 553.512, 288.489 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R58" type="Sprite" parent="Bricks"]
+position = Vector2( 531.972, 294.261 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R59" type="Sprite" parent="Bricks"]
+position = Vector2( 510.528, 300.006 )
+rotation = -0.261803
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R60" type="Sprite" parent="Bricks"]
+position = Vector2( 709.477, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R61" type="Sprite" parent="Bricks"]
+position = Vector2( 687.377, 298.858 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R62" type="Sprite" parent="Bricks"]
+position = Vector2( 666.177, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R63" type="Sprite" parent="Bricks"]
+position = Vector2( 644.177, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R64" type="Sprite" parent="Bricks"]
+position = Vector2( 622.177, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R65" type="Sprite" parent="Bricks"]
+position = Vector2( 600.177, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R66" type="Sprite" parent="Bricks"]
+position = Vector2( 578.177, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R67" type="Sprite" parent="Bricks"]
+position = Vector2( 555.977, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R68" type="Sprite" parent="Bricks"]
+position = Vector2( 533.677, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R69" type="Sprite" parent="Bricks"]
+position = Vector2( 511.477, 298.859 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R70" type="Sprite" parent="Bricks"]
+position = Vector2( 703.925, 349.313 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R71" type="Sprite" parent="Bricks"]
+position = Vector2( 682.578, 343.592 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R72" type="Sprite" parent="Bricks"]
+position = Vector2( 662.1, 338.106 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R73" type="Sprite" parent="Bricks"]
+position = Vector2( 640.85, 332.412 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R74" type="Sprite" parent="Bricks"]
+position = Vector2( 619.599, 326.718 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R75" type="Sprite" parent="Bricks"]
+position = Vector2( 598.349, 321.024 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R76" type="Sprite" parent="Bricks"]
+position = Vector2( 577.099, 315.33 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R77" type="Sprite" parent="Bricks"]
+position = Vector2( 555.655, 309.584 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R78" type="Sprite" parent="Bricks"]
+position = Vector2( 534.115, 303.813 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R79" type="Sprite" parent="Bricks"]
+position = Vector2( 512.672, 298.067 )
+rotation = 0.261796
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R80" type="Sprite" parent="Bricks"]
+position = Vector2( 685.563, 396.689 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R81" type="Sprite" parent="Bricks"]
+position = Vector2( 666.424, 385.638 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R82" type="Sprite" parent="Bricks"]
+position = Vector2( 648.064, 375.039 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R83" type="Sprite" parent="Bricks"]
+position = Vector2( 629.011, 364.039 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R84" type="Sprite" parent="Bricks"]
+position = Vector2( 609.959, 353.039 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R85" type="Sprite" parent="Bricks"]
+position = Vector2( 590.906, 342.039 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R86" type="Sprite" parent="Bricks"]
+position = Vector2( 571.854, 331.039 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R87" type="Sprite" parent="Bricks"]
+position = Vector2( 552.628, 319.939 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R88" type="Sprite" parent="Bricks"]
+position = Vector2( 533.316, 308.789 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R89" type="Sprite" parent="Bricks"]
+position = Vector2( 514.09, 297.689 )
+rotation = 0.523595
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R90" type="Sprite" parent="Bricks"]
+position = Vector2( 655.527, 437.607 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R91" type="Sprite" parent="Bricks"]
+position = Vector2( 639.901, 421.98 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R92" type="Sprite" parent="Bricks"]
+position = Vector2( 624.909, 406.99 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R93" type="Sprite" parent="Bricks"]
+position = Vector2( 609.353, 391.433 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R94" type="Sprite" parent="Bricks"]
+position = Vector2( 593.797, 375.877 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R95" type="Sprite" parent="Bricks"]
+position = Vector2( 578.24, 360.321 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R96" type="Sprite" parent="Bricks"]
+position = Vector2( 562.684, 344.764 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R97" type="Sprite" parent="Bricks"]
+position = Vector2( 546.986, 329.067 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R98" type="Sprite" parent="Bricks"]
+position = Vector2( 531.218, 313.298 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R99" type="Sprite" parent="Bricks"]
+position = Vector2( 515.52, 297.6 )
+rotation = 0.785395
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R100" type="Sprite" parent="Bricks"]
+position = Vector2( 615.988, 469.322 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R101" type="Sprite" parent="Bricks"]
+position = Vector2( 604.939, 450.182 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R102" type="Sprite" parent="Bricks"]
+position = Vector2( 594.339, 431.823 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R103" type="Sprite" parent="Bricks"]
+position = Vector2( 583.339, 412.77 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R104" type="Sprite" parent="Bricks"]
+position = Vector2( 572.339, 393.718 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R105" type="Sprite" parent="Bricks"]
+position = Vector2( 561.339, 374.665 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R106" type="Sprite" parent="Bricks"]
+position = Vector2( 550.339, 355.612 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R107" type="Sprite" parent="Bricks"]
+position = Vector2( 539.239, 336.387 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R108" type="Sprite" parent="Bricks"]
+position = Vector2( 528.089, 317.074 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R109" type="Sprite" parent="Bricks"]
+position = Vector2( 516.988, 297.849 )
+rotation = 1.04719
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R110" type="Sprite" parent="Bricks"]
+position = Vector2( 569.517, 489.74 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R111" type="Sprite" parent="Bricks"]
+position = Vector2( 563.798, 468.393 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R112" type="Sprite" parent="Bricks"]
+position = Vector2( 558.31, 447.915 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R113" type="Sprite" parent="Bricks"]
+position = Vector2( 552.616, 426.665 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R114" type="Sprite" parent="Bricks"]
+position = Vector2( 546.922, 405.415 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R115" type="Sprite" parent="Bricks"]
+position = Vector2( 541.228, 384.164 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R116" type="Sprite" parent="Bricks"]
+position = Vector2( 535.534, 362.914 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R117" type="Sprite" parent="Bricks"]
+position = Vector2( 529.789, 341.47 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R118" type="Sprite" parent="Bricks"]
+position = Vector2( 524.017, 319.93 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R119" type="Sprite" parent="Bricks"]
+position = Vector2( 518.271, 298.487 )
+rotation = 1.30899
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R120" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 497.433 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R121" type="Sprite" parent="Bricks"]
+position = Vector2( 519.332, 475.333 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R122" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 454.133 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R123" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 432.133 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R124" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 410.133 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R125" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 388.133 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R126" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 366.133 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R127" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 343.933 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R128" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 321.633 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R129" type="Sprite" parent="Bricks"]
+position = Vector2( 519.331, 299.433 )
+rotation = 1.57079
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R130" type="Sprite" parent="Bricks"]
+position = Vector2( 468.877, 491.881 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R131" type="Sprite" parent="Bricks"]
+position = Vector2( 474.597, 470.534 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R132" type="Sprite" parent="Bricks"]
+position = Vector2( 480.083, 450.056 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R133" type="Sprite" parent="Bricks"]
+position = Vector2( 485.777, 428.806 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R134" type="Sprite" parent="Bricks"]
+position = Vector2( 491.471, 407.555 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R135" type="Sprite" parent="Bricks"]
+position = Vector2( 497.165, 386.305 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R136" type="Sprite" parent="Bricks"]
+position = Vector2( 502.859, 365.054 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R137" type="Sprite" parent="Bricks"]
+position = Vector2( 508.605, 343.611 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R138" type="Sprite" parent="Bricks"]
+position = Vector2( 514.377, 322.071 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R139" type="Sprite" parent="Bricks"]
+position = Vector2( 520.123, 300.627 )
+rotation = 1.83259
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R140" type="Sprite" parent="Bricks"]
+position = Vector2( 421.642, 473.496 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R141" type="Sprite" parent="Bricks"]
+position = Vector2( 432.693, 454.357 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R142" type="Sprite" parent="Bricks"]
+position = Vector2( 443.292, 435.997 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R143" type="Sprite" parent="Bricks"]
+position = Vector2( 454.292, 416.945 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R144" type="Sprite" parent="Bricks"]
+position = Vector2( 465.292, 397.892 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R145" type="Sprite" parent="Bricks"]
+position = Vector2( 476.292, 378.84 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R146" type="Sprite" parent="Bricks"]
+position = Vector2( 487.292, 359.787 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R147" type="Sprite" parent="Bricks"]
+position = Vector2( 498.392, 340.561 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R148" type="Sprite" parent="Bricks"]
+position = Vector2( 509.542, 321.249 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R149" type="Sprite" parent="Bricks"]
+position = Vector2( 520.642, 302.023 )
+rotation = 2.09439
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R150" type="Sprite" parent="Bricks"]
+position = Vector2( 380.724, 443.46 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R151" type="Sprite" parent="Bricks"]
+position = Vector2( 396.351, 427.834 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R152" type="Sprite" parent="Bricks"]
+position = Vector2( 411.341, 412.842 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R153" type="Sprite" parent="Bricks"]
+position = Vector2( 426.898, 397.286 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R154" type="Sprite" parent="Bricks"]
+position = Vector2( 442.454, 381.73 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R155" type="Sprite" parent="Bricks"]
+position = Vector2( 458.01, 366.173 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R156" type="Sprite" parent="Bricks"]
+position = Vector2( 473.567, 350.617 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R157" type="Sprite" parent="Bricks"]
+position = Vector2( 489.265, 334.919 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R158" type="Sprite" parent="Bricks"]
+position = Vector2( 505.033, 319.151 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R159" type="Sprite" parent="Bricks"]
+position = Vector2( 520.731, 303.453 )
+rotation = 2.35619
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R160" type="Sprite" parent="Bricks"]
+position = Vector2( 348.837, 403.811 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R161" type="Sprite" parent="Bricks"]
+position = Vector2( 367.977, 392.762 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R162" type="Sprite" parent="Bricks"]
+position = Vector2( 386.336, 382.161 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R163" type="Sprite" parent="Bricks"]
+position = Vector2( 405.388, 371.161 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R164" type="Sprite" parent="Bricks"]
+position = Vector2( 424.441, 360.161 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R165" type="Sprite" parent="Bricks"]
+position = Vector2( 443.494, 349.161 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R166" type="Sprite" parent="Bricks"]
+position = Vector2( 462.546, 338.161 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R167" type="Sprite" parent="Bricks"]
+position = Vector2( 481.772, 327.061 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R168" type="Sprite" parent="Bricks"]
+position = Vector2( 501.084, 315.911 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R169" type="Sprite" parent="Bricks"]
+position = Vector2( 520.31, 304.811 )
+rotation = 2.61799
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R170" type="Sprite" parent="Bricks"]
+position = Vector2( 328.419, 357.34 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R171" type="Sprite" parent="Bricks"]
+position = Vector2( 349.766, 351.621 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R172" type="Sprite" parent="Bricks"]
+position = Vector2( 370.243, 346.133 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R173" type="Sprite" parent="Bricks"]
+position = Vector2( 391.494, 340.439 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R174" type="Sprite" parent="Bricks"]
+position = Vector2( 412.744, 334.745 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R175" type="Sprite" parent="Bricks"]
+position = Vector2( 433.994, 329.051 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R176" type="Sprite" parent="Bricks"]
+position = Vector2( 455.245, 323.357 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R177" type="Sprite" parent="Bricks"]
+position = Vector2( 476.688, 317.611 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R178" type="Sprite" parent="Bricks"]
+position = Vector2( 498.228, 311.839 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R179" type="Sprite" parent="Bricks"]
+position = Vector2( 519.672, 306.094 )
+rotation = 2.87979
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R180" type="Sprite" parent="Bricks"]
+position = Vector2( 320.723, 307.241 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R181" type="Sprite" parent="Bricks"]
+position = Vector2( 342.823, 307.242 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R182" type="Sprite" parent="Bricks"]
+position = Vector2( 364.023, 307.241 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R183" type="Sprite" parent="Bricks"]
+position = Vector2( 386.023, 307.241 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R184" type="Sprite" parent="Bricks"]
+position = Vector2( 408.023, 307.241 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R185" type="Sprite" parent="Bricks"]
+position = Vector2( 430.023, 307.241 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R186" type="Sprite" parent="Bricks"]
+position = Vector2( 452.023, 307.241 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R187" type="Sprite" parent="Bricks"]
+position = Vector2( 474.223, 307.242 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R188" type="Sprite" parent="Bricks"]
+position = Vector2( 496.523, 307.241 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R189" type="Sprite" parent="Bricks"]
+position = Vector2( 518.723, 307.241 )
+rotation = 3.14159
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R190" type="Sprite" parent="Bricks"]
+position = Vector2( 326.275, 256.787 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R191" type="Sprite" parent="Bricks"]
+position = Vector2( 347.622, 262.508 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R192" type="Sprite" parent="Bricks"]
+position = Vector2( 368.1, 267.994 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R193" type="Sprite" parent="Bricks"]
+position = Vector2( 389.35, 273.688 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R194" type="Sprite" parent="Bricks"]
+position = Vector2( 410.601, 279.382 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R195" type="Sprite" parent="Bricks"]
+position = Vector2( 431.851, 285.076 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R196" type="Sprite" parent="Bricks"]
+position = Vector2( 453.101, 290.77 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R197" type="Sprite" parent="Bricks"]
+position = Vector2( 474.545, 296.516 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R198" type="Sprite" parent="Bricks"]
+position = Vector2( 496.085, 302.287 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R199" type="Sprite" parent="Bricks"]
+position = Vector2( 517.529, 308.033 )
+rotation = -2.8798
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R200" type="Sprite" parent="Bricks"]
+position = Vector2( 344.706, 209.478 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R201" type="Sprite" parent="Bricks"]
+position = Vector2( 363.845, 220.529 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R202" type="Sprite" parent="Bricks"]
+position = Vector2( 382.205, 231.128 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R203" type="Sprite" parent="Bricks"]
+position = Vector2( 401.257, 242.128 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R204" type="Sprite" parent="Bricks"]
+position = Vector2( 420.31, 253.128 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R205" type="Sprite" parent="Bricks"]
+position = Vector2( 439.363, 264.128 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R206" type="Sprite" parent="Bricks"]
+position = Vector2( 458.415, 275.128 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R207" type="Sprite" parent="Bricks"]
+position = Vector2( 477.641, 286.228 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R208" type="Sprite" parent="Bricks"]
+position = Vector2( 496.953, 297.378 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R209" type="Sprite" parent="Bricks"]
+position = Vector2( 516.179, 308.478 )
+rotation = -2.618
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R210" type="Sprite" parent="Bricks"]
+position = Vector2( 374.742, 168.559 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R211" type="Sprite" parent="Bricks"]
+position = Vector2( 390.368, 184.187 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R212" type="Sprite" parent="Bricks"]
+position = Vector2( 405.36, 199.177 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R213" type="Sprite" parent="Bricks"]
+position = Vector2( 420.916, 214.733 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R214" type="Sprite" parent="Bricks"]
+position = Vector2( 436.472, 230.29 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R215" type="Sprite" parent="Bricks"]
+position = Vector2( 452.029, 245.846 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R216" type="Sprite" parent="Bricks"]
+position = Vector2( 467.585, 261.402 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R217" type="Sprite" parent="Bricks"]
+position = Vector2( 483.283, 277.1 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R218" type="Sprite" parent="Bricks"]
+position = Vector2( 499.051, 292.869 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R219" type="Sprite" parent="Bricks"]
+position = Vector2( 514.749, 308.566 )
+rotation = -2.3562
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R220" type="Sprite" parent="Bricks"]
+position = Vector2( 414.28, 136.845 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R221" type="Sprite" parent="Bricks"]
+position = Vector2( 425.33, 155.985 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R222" type="Sprite" parent="Bricks"]
+position = Vector2( 435.93, 174.344 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R223" type="Sprite" parent="Bricks"]
+position = Vector2( 446.93, 193.397 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R224" type="Sprite" parent="Bricks"]
+position = Vector2( 457.93, 212.449 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R225" type="Sprite" parent="Bricks"]
+position = Vector2( 468.93, 231.502 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R226" type="Sprite" parent="Bricks"]
+position = Vector2( 479.931, 250.554 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R227" type="Sprite" parent="Bricks"]
+position = Vector2( 491.03, 269.78 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R228" type="Sprite" parent="Bricks"]
+position = Vector2( 502.18, 289.092 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R229" type="Sprite" parent="Bricks"]
+position = Vector2( 513.28, 308.318 )
+rotation = -2.0944
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="R230" type="Sprite" parent="Bricks"]
+position = Vector2( 460.752, 116.427 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="R231" type="Sprite" parent="Bricks"]
+position = Vector2( 466.471, 137.774 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="R232" type="Sprite" parent="Bricks"]
+position = Vector2( 471.959, 158.251 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="R233" type="Sprite" parent="Bricks"]
+position = Vector2( 477.653, 179.502 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="R234" type="Sprite" parent="Bricks"]
+position = Vector2( 483.347, 200.752 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="R235" type="Sprite" parent="Bricks"]
+position = Vector2( 489.041, 222.002 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="R236" type="Sprite" parent="Bricks"]
+position = Vector2( 494.735, 243.253 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="R237" type="Sprite" parent="Bricks"]
+position = Vector2( 500.48, 264.696 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="R238" type="Sprite" parent="Bricks"]
+position = Vector2( 506.252, 286.237 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="R239" type="Sprite" parent="Bricks"]
+position = Vector2( 511.998, 307.68 )
+rotation = -1.8326
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+centered = false
