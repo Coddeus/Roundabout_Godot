@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://!r/r2.png" type="Texture" id=1]
 [ext_resource path="res://!r/r7.png" type="Texture" id=2]
@@ -13,9 +13,10 @@
 [ext_resource path="res://Paddle.gd" type="Script" id=11]
 [ext_resource path="res://!r/thickPaddle.png" type="Texture" id=12]
 [ext_resource path="res://!r/ball.png" type="Texture" id=13]
+[ext_resource path="res://Ball.gd" type="Script" id=14]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 44.0114
+radius = 38.0
 
 [node name="Viewport" type="Node2D"]
 
@@ -3401,18 +3402,19 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 position = Vector2( 1920, 1080 )
 script = ExtResource( 11 )
 
-[node name="Paddle" type="Sprite" parent="Paddle"]
+[node name="Sprite" type="Sprite" parent="Paddle"]
 position = Vector2( 0, 1000 )
 rotation = -6.28319
 scale = Vector2( 0.6, 0.8 )
 texture = ExtResource( 12 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Paddle"]
-position = Vector2( 2, 2 )
+z_as_relative = false
+polygon = PoolVector2Array( -240, 1023, -203, 1003, -180, 992, -157, 983, -137, 976, -113, 969, -90, 964, -69, 960, -47, 957, -29, 955.598, -6, 954.859, 11, 955, 29, 955.876, 49, 957.699, 70, 960.653, 86.0001, 964, 106, 968.532, 124, 973.54, 143, 979.842, 161, 986.465, 179, 994, 204, 1006, 237, 1023 )
 
-[node name="Ball" type="RigidBody2D" parent="."]
+[node name="Ball" type="KinematicBody2D" parent="."]
 position = Vector2( 1920, 1080 )
-gravity_scale = 0.0
+script = ExtResource( 14 )
 
 [node name="Sprite" type="Sprite" parent="Ball"]
 position = Vector2( 0, 919 )
