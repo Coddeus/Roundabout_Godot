@@ -12,9 +12,19 @@ config_version=4
 
 config/name="Roundabout"
 run/main_scene="res://Node2D.tscn"
+boot_splash/bg_color=Color( 0.329412, 0.227451, 0.529412, 1 )
 config/icon="res://!r/r4.png"
 config/macos_native_icon="res://!r/r4.png"
 config/windows_native_icon="res://!r/r4.png"
+
+[display]
+
+window/size/width=3840
+window/size/height=2160
+window/size/resizable=false
+window/size/fullscreen=true
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
 
 [gui]
 
