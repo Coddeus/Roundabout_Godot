@@ -11,7 +11,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
+	if position[0] > 3840 or position[0] < 0 or position[1] > 2160 or position[1] < 0:
+		pass
 	var collisionInfo = move_and_collide(velocity * delta)
 	if collisionInfo:
-		# collisionInfo.collider.queue_free()
+		if collisionInfo.collider != get_node("../Paddle"):
+			collisionInfo.collider.queue_free()
 		velocity = velocity.bounce(collisionInfo.normal)
