@@ -3,7 +3,7 @@ extends Control
 var is_paused = false setget set_is_paused
 
 func _unhandled_input(event):
-	if event.is_action_pressed("pause"):
+	if get_node("../WinMenu").visible == false and event.is_action_pressed("pause"):
 # warning-ignore:unsafe_property_access
 		self.is_paused = !is_paused
 

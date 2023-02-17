@@ -3190,10 +3190,10 @@ texture = ExtResource( 4 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
 shape = SubResource( 1 )
 
-[node name="PauseMenu" parent="." instance=ExtResource( 15 )]
+[node name="WinMenu" parent="." instance=ExtResource( 17 )]
 visible = false
 
-[node name="WinMenu" parent="." instance=ExtResource( 17 )]
+[node name="PauseMenu" parent="." instance=ExtResource( 15 )]
 visible = false
 
 [node name="GUI" parent="." instance=ExtResource( 16 )]
