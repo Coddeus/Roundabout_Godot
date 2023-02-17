@@ -1,20 +1,22 @@
 extends KinematicBody2D
 
-
-# Declare member variables here. Examples:
 var velocity = Vector2(0, -1000)
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
+	
 	if position[0] > 3840 or position[0] < 0 or position[1] >= 2160 or position[1] <= 0:
-		get_tree().quit()
+		global.attempts += 1
+# warning-ignore:return_value_discarded
+		get_tree().reload_current_scene()
+	
 	var collisionInfo = move_and_collide(velocity * delta)
 	if collisionInfo:
 		if collisionInfo.collider != get_node("../Paddle"):
-			collisionInfo.collider.queue_free()
+			removeBrick(collisionInfo)
 		velocity = velocity.bounce(collisionInfo.normal)
+
+func removeBrick(collisionInfo):
+	collisionInfo.collider.queue_free()
+	if get_node("../Bricks").get_child_count()==0:
+		print("You win!")

@@ -1,3 +1,91 @@
-[gd_scene format=2]
+[gd_scene load_steps=8 format=2]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource path="res://RetroTheme.tres" type="Theme" id=1]
+[ext_resource path="res://!r/peaceful_night.png" type="Texture" id=3]
+[ext_resource path="res://PauseMenu.gd" type="Script" id=4]
+
+[sub_resource type="InputEventKey" id=4]
+scancode = 82
+
+[sub_resource type="ShortCut" id=5]
+shortcut = SubResource( 4 )
+
+[sub_resource type="InputEventKey" id=6]
+scancode = 77
+
+[sub_resource type="ShortCut" id=7]
+shortcut = SubResource( 6 )
+
+[node name="PauseMenu" type="Control"]
+pause_mode = 2
+process_priority = 123
+theme = ExtResource( 1 )
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -70.0
+margin_top = -35.0
+margin_right = 3930.0
+margin_bottom = 2215.0
+texture = ExtResource( 3 )
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 3840.0
+margin_bottom = 2160.0
+rect_pivot_offset = Vector2( -4021, -559 )
+color = Color( 0.129412, 0.0901961, 0.207843, 0.588235 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 1368.0
+margin_top = 515.0
+margin_right = 2748.0
+margin_bottom = 1927.0
+rect_scale = Vector2( 0.8, 0.8 )
+custom_constants/separation = 100
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 1380.0
+margin_bottom = 300.0
+theme = ExtResource( 1 )
+text = "Game paused"
+align = 1
+valign = 1
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+margin_top = 400.0
+margin_right = 1380.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 0, 200 )
+
+[node name="Resume" type="Button" parent="VBoxContainer"]
+margin_top = 700.0
+margin_right = 1380.0
+margin_bottom = 1006.0
+theme = ExtResource( 1 )
+shortcut = SubResource( 5 )
+text = "Resume"
+
+[node name="MainMenu" type="Button" parent="VBoxContainer"]
+margin_top = 1106.0
+margin_right = 1380.0
+margin_bottom = 1412.0
+size_flags_vertical = 0
+theme = ExtResource( 1 )
+shortcut = SubResource( 7 )
+text = "Main Menu"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 3597.0
+margin_top = 2088.0
+margin_right = 4597.0
+margin_bottom = 2388.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_scale = Vector2( 0.2, 0.2 )
+theme = ExtResource( 1 )
+text = "Jay Mayu"
+align = 2
+
+[connection signal="pressed" from="VBoxContainer/Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainMenu" to="." method="_on_MainMenu_pressed"]

@@ -13,7 +13,22 @@ config_version=4
 config/name="Roundabout"
 run/main_scene="res://Level.tscn"
 boot_splash/bg_color=Color( 0.329412, 0.227451, 0.529412, 1 )
-config/icon="res://!r/thickPaddle.png"
+config/icon="res://!r/r6.png"
+config/macos_native_icon="res://!r/r6.icns"
+config/windows_native_icon="res://!r/r6.ico"
+
+[autoload]
+
+global="*res://global.gd"
+
+[debug]
+
+gdscript/completion/autocomplete_setters_and_getters=true
+gdscript/warnings/unused_class_variable=true
+gdscript/warnings/unsafe_property_access=true
+gdscript/warnings/unsafe_method_access=true
+gdscript/warnings/unsafe_cast=true
+gdscript/warnings/unsafe_call_argument=true
 
 [display]
 
@@ -21,12 +36,20 @@ window/size/width=3840
 window/size/height=2160
 window/size/resizable=false
 window/size/fullscreen=true
-window/stretch/mode="viewport"
+window/stretch/mode="2d"
 window/stretch/aspect="expand"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+pause={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [physics]
 

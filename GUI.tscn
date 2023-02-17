@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://RetroTheme.tres" type="Theme" id=2]
+[ext_resource path="res://AttemptLabel.gd" type="Script" id=3]
+
+[node name="GUI" type="CanvasLayer"]
+
+[node name="AttemptLabel" type="Label" parent="."]
+margin_left = 126.0
+margin_top = 51.0
+margin_right = 3966.0
+margin_bottom = 351.0
+rect_scale = Vector2( 0.7, 0.8 )
+theme = ExtResource( 2 )
+text = "Attempt 1"
+script = ExtResource( 3 )

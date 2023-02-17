@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Ball.gd" type="Script" id=1]
 [ext_resource path="res://Paddle.gd" type="Script" id=2]
@@ -14,11 +14,18 @@
 [ext_resource path="res://!r/r5.png" type="Texture" id=12]
 [ext_resource path="res://!r/r9.png" type="Texture" id=13]
 [ext_resource path="res://!r/r7.png" type="Texture" id=14]
+[ext_resource path="res://PauseMenu.tscn" type="PackedScene" id=15]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=16]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 38.0
 
-[node name="Viewport" type="Node2D"]
+[node name="Level" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 3840.0
+margin_bottom = 2160.0
+color = Color( 0.470588, 0.0941176, 0.356863, 1 )
 
 [node name="Bricks" type="Node2D" parent="."]
 position = Vector2( 1920, 1080 )
@@ -409,7 +416,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B3"]
 position = Vector2( -4.39966, -195.799 )
@@ -424,7 +430,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B3"]
 position = Vector2( 27.0006, -193 )
@@ -438,7 +443,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B3"]
 position = Vector2( 24.0002, -171 )
@@ -452,7 +456,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B3"]
 position = Vector2( 21.0006, -147.999 )
@@ -466,7 +469,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B3"]
 position = Vector2( 18, -125 )
@@ -480,7 +482,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B3"]
 position = Vector2( 15.0002, -102.49 )
@@ -494,7 +495,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B3"]
 position = Vector2( 12.0004, -79.9994 )
@@ -508,7 +508,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B3"]
 position = Vector2( 9.00024, -56.9994 )
@@ -522,7 +521,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B3"]
 position = Vector2( 6, -33.9994 )
@@ -536,7 +534,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B3" type="StaticBody2D" parent="Bricks"]
 rotation = 0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B3"]
 position = Vector2( 3.00049, -11.3246 )
@@ -681,7 +678,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B5"]
 position = Vector2( -4.39966, -195.799 )
@@ -696,7 +692,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B5"]
 position = Vector2( 27.0006, -193 )
@@ -710,7 +705,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B5"]
 position = Vector2( 24.0002, -171 )
@@ -724,7 +718,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B5"]
 position = Vector2( 21.0006, -147.999 )
@@ -738,7 +731,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B5"]
 position = Vector2( 18, -125 )
@@ -752,7 +744,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B5"]
 position = Vector2( 15.0002, -102.49 )
@@ -766,7 +757,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B5"]
 position = Vector2( 12.0004, -79.9994 )
@@ -780,7 +770,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B5"]
 position = Vector2( 9.00024, -56.9994 )
@@ -794,7 +783,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B5"]
 position = Vector2( 6, -33.9994 )
@@ -808,7 +796,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B5" type="StaticBody2D" parent="Bricks"]
 rotation = 1.309
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B5"]
 position = Vector2( 3.00049, -11.3246 )
@@ -953,7 +940,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B7"]
 position = Vector2( -4.39966, -195.799 )
@@ -968,7 +954,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B7"]
 position = Vector2( 27.0006, -193 )
@@ -982,7 +967,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B7"]
 position = Vector2( 24.0002, -171 )
@@ -996,7 +980,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B7"]
 position = Vector2( 21.0006, -147.999 )
@@ -1010,7 +993,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B7"]
 position = Vector2( 18, -125 )
@@ -1024,7 +1006,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B7"]
 position = Vector2( 15.0002, -102.49 )
@@ -1038,7 +1019,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B7"]
 position = Vector2( 12.0004, -79.9994 )
@@ -1052,7 +1032,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B7"]
 position = Vector2( 9.00024, -56.9994 )
@@ -1066,7 +1045,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B7"]
 position = Vector2( 6, -33.9994 )
@@ -1080,7 +1058,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B7" type="StaticBody2D" parent="Bricks"]
 rotation = 1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B7"]
 position = Vector2( 3.00049, -11.3246 )
@@ -1225,7 +1202,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B9"]
 position = Vector2( -4.39966, -195.799 )
@@ -1240,7 +1216,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B9"]
 position = Vector2( 27.0006, -193 )
@@ -1254,7 +1229,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B9"]
 position = Vector2( 24.0002, -171 )
@@ -1268,7 +1242,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B9"]
 position = Vector2( 21.0006, -147.999 )
@@ -1282,7 +1255,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B9"]
 position = Vector2( 18, -125 )
@@ -1296,7 +1268,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B9"]
 position = Vector2( 15.0002, -102.49 )
@@ -1310,7 +1281,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B9"]
 position = Vector2( 12.0004, -79.9994 )
@@ -1324,7 +1294,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B9"]
 position = Vector2( 9.00024, -56.9994 )
@@ -1338,7 +1307,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B9"]
 position = Vector2( 6, -33.9994 )
@@ -1352,7 +1320,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B9" type="StaticBody2D" parent="Bricks"]
 rotation = 2.35619
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B9"]
 position = Vector2( 3.00049, -11.3246 )
@@ -1366,7 +1333,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B10"]
 position = Vector2( -4.39966, -195.799 )
@@ -1381,7 +1347,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B10"]
 position = Vector2( 27.0006, -193 )
@@ -1395,7 +1360,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B10"]
 position = Vector2( 24.0002, -171 )
@@ -1409,7 +1373,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B10"]
 position = Vector2( 21.0006, -147.999 )
@@ -1423,7 +1386,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B10"]
 position = Vector2( 18, -125 )
@@ -1437,7 +1399,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B10"]
 position = Vector2( 15.0002, -102.49 )
@@ -1451,7 +1412,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B10"]
 position = Vector2( 12.0004, -79.9994 )
@@ -1465,7 +1425,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B10"]
 position = Vector2( 9.00024, -56.9994 )
@@ -1479,7 +1438,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B10"]
 position = Vector2( 6, -33.9994 )
@@ -1493,7 +1451,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B10" type="StaticBody2D" parent="Bricks"]
 rotation = 2.61799
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B10"]
 position = Vector2( 3.00049, -11.3246 )
@@ -1507,7 +1464,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B11"]
 position = Vector2( -4.39966, -195.799 )
@@ -1522,7 +1478,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B11"]
 position = Vector2( 27.0006, -193 )
@@ -1536,7 +1491,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B11"]
 position = Vector2( 24.0002, -171 )
@@ -1550,7 +1504,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B11"]
 position = Vector2( 21.0006, -147.999 )
@@ -1564,7 +1517,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B11"]
 position = Vector2( 18, -125 )
@@ -1578,7 +1530,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B11"]
 position = Vector2( 15.0002, -102.49 )
@@ -1592,7 +1543,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B11"]
 position = Vector2( 12.0004, -79.9994 )
@@ -1606,7 +1556,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B11"]
 position = Vector2( 9.00024, -56.9994 )
@@ -1620,7 +1569,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B11"]
 position = Vector2( 6, -33.9994 )
@@ -1634,7 +1582,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B11" type="StaticBody2D" parent="Bricks"]
 rotation = 2.87979
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B11"]
 position = Vector2( 3.00049, -11.3246 )
@@ -2303,7 +2250,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B17"]
 position = Vector2( -4.39966, -195.799 )
@@ -2318,7 +2264,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B17"]
 position = Vector2( 27.0006, -193 )
@@ -2332,7 +2277,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B17"]
 position = Vector2( 24.0002, -171 )
@@ -2346,7 +2290,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B17"]
 position = Vector2( 21.0006, -147.999 )
@@ -2360,7 +2303,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B17"]
 position = Vector2( 18, -125 )
@@ -2374,7 +2316,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B17"]
 position = Vector2( 15.0002, -102.49 )
@@ -2388,7 +2329,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B17"]
 position = Vector2( 12.0004, -79.9994 )
@@ -2402,7 +2342,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B17"]
 position = Vector2( 9.00024, -56.9994 )
@@ -2416,7 +2355,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B17"]
 position = Vector2( 6, -33.9994 )
@@ -2430,7 +2368,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B17" type="StaticBody2D" parent="Bricks"]
 rotation = -1.8326
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B17"]
 position = Vector2( 3.00049, -11.3246 )
@@ -2575,7 +2512,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B19"]
 position = Vector2( -4.39966, -195.799 )
@@ -2590,7 +2526,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B19"]
 position = Vector2( 27.0006, -193 )
@@ -2604,7 +2539,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B19"]
 position = Vector2( 24.0002, -171 )
@@ -2618,7 +2552,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B19"]
 position = Vector2( 21.0006, -147.999 )
@@ -2632,7 +2565,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B19"]
 position = Vector2( 18, -125 )
@@ -2646,7 +2578,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B19"]
 position = Vector2( 15.0002, -102.49 )
@@ -2660,7 +2591,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B19"]
 position = Vector2( 12.0004, -79.9994 )
@@ -2674,7 +2604,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B19"]
 position = Vector2( 9.00024, -56.9994 )
@@ -2688,7 +2617,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B19"]
 position = Vector2( 6, -33.9994 )
@@ -2702,7 +2630,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B19" type="StaticBody2D" parent="Bricks"]
 rotation = -1.309
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B19"]
 position = Vector2( 3.00049, -11.3246 )
@@ -2847,7 +2774,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B21"]
 position = Vector2( -4.39966, -195.799 )
@@ -2862,7 +2788,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B21"]
 position = Vector2( 27.0006, -193 )
@@ -2876,7 +2801,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B21"]
 position = Vector2( 24.0002, -171 )
@@ -2890,7 +2814,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B21"]
 position = Vector2( 21.0006, -147.999 )
@@ -2904,7 +2827,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B21"]
 position = Vector2( 18, -125 )
@@ -2918,7 +2840,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B21"]
 position = Vector2( 15.0002, -102.49 )
@@ -2932,7 +2853,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B21"]
 position = Vector2( 12.0004, -79.9994 )
@@ -2946,7 +2866,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B21"]
 position = Vector2( 9.00024, -56.9994 )
@@ -2960,7 +2879,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B21"]
 position = Vector2( 6, -33.9994 )
@@ -2974,7 +2892,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B21" type="StaticBody2D" parent="Bricks"]
 rotation = -0.785398
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B21"]
 position = Vector2( 3.00049, -11.3246 )
@@ -2988,7 +2905,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B22"]
 position = Vector2( -4.39966, -195.799 )
@@ -3003,7 +2919,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B22"]
 position = Vector2( 27.0006, -193 )
@@ -3017,7 +2932,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B22"]
 position = Vector2( 24.0002, -171 )
@@ -3031,7 +2945,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B22"]
 position = Vector2( 21.0006, -147.999 )
@@ -3045,7 +2958,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B22"]
 position = Vector2( 18, -125 )
@@ -3059,7 +2971,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B22"]
 position = Vector2( 15.0002, -102.49 )
@@ -3073,7 +2984,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B22"]
 position = Vector2( 12.0004, -79.9994 )
@@ -3087,7 +2997,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B22"]
 position = Vector2( 9.00024, -56.9994 )
@@ -3101,7 +3010,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B22"]
 position = Vector2( 6, -33.9994 )
@@ -3115,7 +3023,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B22" type="StaticBody2D" parent="Bricks"]
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B22"]
 position = Vector2( 3.00049, -11.3246 )
@@ -3129,7 +3036,6 @@ polygon = PoolVector2Array( 478, 361.942, 480.845, 361.999, 484.151, 362.36, 487
 
 [node name="0B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R0" type="Sprite" parent="Bricks/0B23"]
 position = Vector2( -4.39966, -195.799 )
@@ -3144,7 +3050,6 @@ polygon = PoolVector2Array( 463, 132, 469, 132, 475, 132.3, 480, 132.7, 485, 133
 
 [node name="1B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R1" type="Sprite" parent="Bricks/1B23"]
 position = Vector2( 27.0006, -193 )
@@ -3158,7 +3063,6 @@ polygon = PoolVector2Array( 467, 179.811, 473, 179.819, 479, 180, 484, 180.328, 
 
 [node name="2B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R2" type="Sprite" parent="Bricks/2B23"]
 position = Vector2( 24.0002, -171 )
@@ -3172,7 +3076,6 @@ polygon = PoolVector2Array( 463, 204.207, 470, 204.169, 478, 204.907, 484, 205.3
 
 [node name="3B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R3" type="Sprite" parent="Bricks/3B23"]
 position = Vector2( 21.0006, -147.999 )
@@ -3186,7 +3089,6 @@ polygon = PoolVector2Array( 471.372, 218.485, 477.096, 218.392, 482, 218.67, 488
 
 [node name="4B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R4" type="Sprite" parent="Bricks/4B23"]
 position = Vector2( 18, -125 )
@@ -3200,7 +3102,6 @@ polygon = PoolVector2Array( 471.456, 247.035, 476, 247, 481, 247.285, 486, 247.7
 
 [node name="5B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R5" type="Sprite" parent="Bricks/5B23"]
 position = Vector2( 15.0002, -102.49 )
@@ -3214,7 +3115,6 @@ polygon = PoolVector2Array( 466.646, 268.413, 472, 268.532, 477, 268.87, 481, 26
 
 [node name="6B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R6" type="Sprite" parent="Bricks/6B23"]
 position = Vector2( 12.0004, -79.9994 )
@@ -3228,7 +3128,6 @@ polygon = PoolVector2Array( 461.107, 311.726, 467, 311.706, 472, 312.066, 478, 3
 
 [node name="7B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R7" type="Sprite" parent="Bricks/7B23"]
 position = Vector2( 9.00024, -56.9994 )
@@ -3242,7 +3141,6 @@ polygon = PoolVector2Array( 473.34, 320.237, 479, 320.421, 484, 320.916, 489, 32
 
 [node name="8B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R8" type="Sprite" parent="Bricks/8B23"]
 position = Vector2( 6, -33.9994 )
@@ -3256,7 +3154,6 @@ polygon = PoolVector2Array( 476.549, 338.442, 481, 338.599, 486, 339.237, 490.63
 
 [node name="9B23" type="StaticBody2D" parent="Bricks"]
 rotation = -0.261799
-scale = Vector2( 1, 1 )
 
 [node name="R9" type="Sprite" parent="Bricks/9B23"]
 position = Vector2( 3.00049, -11.3246 )
@@ -3291,3 +3188,8 @@ texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
 shape = SubResource( 1 )
+
+[node name="PauseMenu" parent="." instance=ExtResource( 15 )]
+visible = false
+
+[node name="GUI" parent="." instance=ExtResource( 16 )]

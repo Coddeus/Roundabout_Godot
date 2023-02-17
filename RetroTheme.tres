@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=2 format=2]
+
+[ext_resource path="res://ConnectionFont.tres" type="DynamicFont" id=1]
+
+[resource]
+default_font = ExtResource( 1 )
+Button/colors/font_color = Color( 0.495758, 0.627607, 0.667969, 1 )
+Button/colors/font_color_focus = Color( 0.597229, 0.756064, 0.804688, 1 )
+Button/colors/font_color_hover = Color( 0.597229, 0.756064, 0.804688, 1 )
+Button/colors/font_color_pressed = Color( 0.746094, 0.940491, 1, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = ExtResource( 1 )
+Label/colors/font_color = Color( 0.597229, 0.756064, 0.804688, 1 )
