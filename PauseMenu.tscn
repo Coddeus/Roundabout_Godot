@@ -1,20 +1,29 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://RetroTheme.tres" type="Theme" id=1]
+[ext_resource path="res://!r/connection/Connection.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://!r/peaceful_night.png" type="Texture" id=3]
 [ext_resource path="res://PauseMenu.gd" type="Script" id=4]
 
-[sub_resource type="InputEventKey" id=4]
+[sub_resource type="DynamicFont" id=9]
+size = 150
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 100
+font_data = ExtResource( 2 )
+
+[sub_resource type="InputEventKey" id=10]
 scancode = 82
 
 [sub_resource type="ShortCut" id=5]
-shortcut = SubResource( 4 )
+shortcut = SubResource( 10 )
 
-[sub_resource type="InputEventKey" id=6]
+[sub_resource type="InputEventKey" id=11]
 scancode = 77
 
 [sub_resource type="ShortCut" id=7]
-shortcut = SubResource( 6 )
+shortcut = SubResource( 11 )
 
 [node name="PauseMenu" type="Control"]
 pause_mode = 2
@@ -37,14 +46,14 @@ color = Color( 0.129412, 0.0901961, 0.207843, 0.588235 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 1368.0
-margin_top = 515.0
+margin_top = 415.0
 margin_right = 2748.0
-margin_bottom = 1927.0
+margin_bottom = 2077.0
 rect_scale = Vector2( 0.8, 0.8 )
 custom_constants/separation = 100
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="gamePaused" type="Label" parent="VBoxContainer"]
 margin_right = 1380.0
 margin_bottom = 300.0
 theme = ExtResource( 1 )
@@ -52,24 +61,50 @@ text = "Game paused"
 align = 1
 valign = 1
 
-[node name="Control" type="Control" parent="VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 400.0
 margin_right = 1380.0
-margin_bottom = 600.0
+margin_bottom = 550.0
+
+[node name="Mode" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_right = 353.0
+margin_bottom = 150.0
+custom_colors/font_color = Color( 0, 0.929412, 1, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "Chill! "
+align = 1
+valign = 1
+
+[node name="ModeOverview" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_left = 357.0
+margin_top = 25.0
+margin_right = 1367.0
+margin_bottom = 125.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Break the red Brick!"
+align = 1
+valign = 1
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+margin_top = 650.0
+margin_right = 1380.0
+margin_bottom = 850.0
 rect_min_size = Vector2( 0, 200 )
 
 [node name="Resume" type="Button" parent="VBoxContainer"]
-margin_top = 700.0
+margin_top = 950.0
 margin_right = 1380.0
-margin_bottom = 1006.0
+margin_bottom = 1256.0
 theme = ExtResource( 1 )
 shortcut = SubResource( 5 )
 text = "Resume"
 
 [node name="MainMenu" type="Button" parent="VBoxContainer"]
-margin_top = 1106.0
+margin_top = 1356.0
 margin_right = 1380.0
-margin_bottom = 1412.0
+margin_bottom = 1662.0
 size_flags_vertical = 0
 theme = ExtResource( 1 )
 shortcut = SubResource( 7 )

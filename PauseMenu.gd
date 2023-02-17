@@ -4,6 +4,7 @@ var is_paused = false setget set_is_paused
 
 func _unhandled_input(event):
 	if event.is_action_pressed("pause"):
+# warning-ignore:unsafe_property_access
 		self.is_paused = !is_paused
 
 func set_is_paused(value):
@@ -13,6 +14,7 @@ func set_is_paused(value):
 
 
 func _on_Resume_pressed():
+# warning-ignore:unsafe_property_access
 	self.is_paused = false
 
 func _on_MainMenu_pressed():
